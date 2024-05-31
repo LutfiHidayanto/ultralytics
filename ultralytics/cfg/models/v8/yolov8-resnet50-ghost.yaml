@@ -23,7 +23,7 @@ backbone:
   - [-1, 1, ResNetLayer, [3, 512, 1, False, 1]]
   - [-1, 1, GhostConv, [512, 3, 2]] # 5-P4/16
   - [-1, 6, C3Ghost, [512, True]]
-  - [ -1, 1, ResNetLayer, [ 3, 768, 1, True, 1 ] ]
+  - [ -1, 1, ResNetLayer, [ 3, 768, 1, False, 1 ] ]
   - [-1, 1, GhostConv, [768, 3, 2]] # 7-P5/32
   - [-1, 3, C3Ghost, [768, True]]
   - [ -1, 1, ResNetLayer, [ 3, 1024, 1, False, 1 ] ]
