@@ -375,9 +375,9 @@ class BottleneckResnet(nn.Module):
         """
         super().__init__()
         c_ = int(c2 * e)  # hidden channels
-        self.cv1 = Conv(c1, c_, 1, 1)
+        self.cv1 = Conv(c1, c_, (1, 1), 1)
         self.cv2 = Conv(c_, c2, k[1], 1, g=g)
-        self.cv3 = Conv(c1, c_, 1, 1)
+        self.cv3 = Conv(c1, c_, (1, 1), 1)
         self.add = shortcut and c1 == c2
 
     def forward(self, x):
