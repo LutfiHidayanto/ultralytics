@@ -10,7 +10,7 @@ import torch.nn as nn
 from ultralytics.nn.modules import (
     AIFI,
     C1,
-    C2,
+C2,
     C3,
     C3TR,
     OBB,
